@@ -20,4 +20,3 @@ if __name__ == '__main__':
     new_Sent = check_vowels(sentence, vowels)
     print("vowels in sentence-[%s]"%(', '.join(map(str, set(new_Sent)))))
     print(f'Each vowel repeated as-{count(new_Sent)} (request with vowel)')
-
