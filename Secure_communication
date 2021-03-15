@@ -7,25 +7,30 @@ def encryptor(key,msg):
     for ch in msg:
         #   transformation of each character into next kth character.
         if ch.isalpha():
+            l2 = list(msg)
             temp = ord(ch) + key
             if ch.isupper():
                 while temp >90:
                     count[i]=1
                     temp%=90
                     if temp<=90:
-                        msg=msg.replace(ch,chr(temp+64))
+                        l2[i]=chr(temp+64)
                         break
                 else:
-                    msg = msg.replace(ch, chr(temp))
+                    l2[i]=chr(temp)
             else:
                 while temp>122:
                     count[i]=1
                     temp%=122
                     if temp<=122:
-                        msg=msg.replace(ch,chr(temp+96))
+                        l2[i]=chr(temp+96)
                         break
                 else:
-                     msg=msg.replace(ch,chr(temp))
+                     l2[i]=chr(temp)
+            msg=''
+            for ele in l2: msg+=ele
+
+
 
         #   Increasing each numeric character with k according to the problem
         elif ch.isnumeric():
@@ -50,16 +55,19 @@ def decryptor(key,msg,count):
     i=0
     for ch in msg:
         if ch.isalpha():
+            print(ord(ch))
+            t2=ord(ch) - key
             if ch.isupper():
-                msg=msg.replace(ch,chr(ord(ch)-k+count[i]*90))
+                msg=msg.replace(ch,chr(t2+count[i]*90))
             else:
-                msg=msg.replace(ch,chr(ord(ch)-k+count[i]*122))
+                msg=msg.replace(ch,chr(t2+count[i]*122))
         elif ch.isnumeric():
-            msg=msg.replace(ch,str(abs(int(ch)-key+count[i]*9)))
+            msg=msg.replace(ch,str(abs(int(ch)-key+count[i]*90)))
 
 
         elif ch=='@': msg=msg.replace(ch,' ')
         elif ch=='#': msg=msg.replace(ch,'.')
+        i+=1
     return msg
 
 #   PL
