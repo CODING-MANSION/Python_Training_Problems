@@ -171,7 +171,7 @@ if __name__=='__main__':
                             print("MACHINE STATUS:- OFF")
                             print("Go Ahed")
                             ch=input("PRESS 'S' FOR START THE MACHINE:- ")
-                            if ch=='s' or ch=='S':
+                            if ch=='s' or ch=='S': 
                                 s.machineON()
                         else:print("WRONG MACHINE ID :(")
                     if ch==3:
