@@ -1,0 +1,23 @@
+unable to create new account
+without logining it is redirecting to adding products page
+myprofile uneditable#myprofile incomplete
+#contactus#complaints#jinn#delivery
+#fillkycform
+#partner with us and jinn: alternate mobileno. type=number
+#jin state,city,nationality,pincode
+#login
+#product adding page contact is disabled and other three and coupen
+#tax percent remove
+#ourservices#careers#orderstatus#paymentgateways#media
+#in jinn dashboard if wrong login then server error
+#myprofile in dashboard wrong restaurant name
+#edit details in resataurant dashboard redirecting to jinn
+#jinn myprofile edit not working
+#without kyc verification also delivery boy is shown in list in both dashboards
+#customers in customer list are not unique
+#time is static in orders
+#orders in jinn dashboard
+#all:myorders#ordres:availableordres
+#on accepting in restuarant dashbord only then it should be seen in allorders in jinndashboard
+#remove reject in jinn dashboard
+#customer name wrong in jinn order details
